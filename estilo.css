@@ -1,0 +1,57 @@
+body {
+    background: rgb(105, 170, 255);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 10px; /* Espaçamento adicional para melhor legibilidade em telas menores */
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 100%; /* A largura máxima da seção será 100% do dispositivo */
+    margin: 15px; /* Espaçamento ao redor da seção */
+    box-shadow: 5px 5px 10px rgb(26, 25, 25);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px; /* Espaçamento adicional para melhor legibilidade em telas menores */
+}
+
+img {
+    max-width: 100%; /* A imagem se ajustará à largura do dispositivo */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    border-radius: 50%; /* Reduzi o valor para 50% para evitar distorção em telas menores */
+}
+
+/* Adicione uma regra de media query para ajustar estilos em telas menores, como celulares */
+@media (max-width: 768px) {
+    body {
+        font-size: 14pt; /* Reduzir o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+
+    header {
+        font-size: 18pt; /* Aumentar o tamanho da fonte no cabeçalho */
+    }
+
+    section {
+        margin: 5px; /* Reduzir o espaçamento ao redor da seção em telas menores */
+        padding: 10px; /* Ajustar o espaçamento interno da seção */
+    }
+
+    footer {
+        font-size: 12pt; /* Reduzir o tamanho da fonte no rodapé */
+    }
+}
